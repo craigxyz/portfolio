@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+<rect width="800" height="600" fill="#d4cdc0"/><g transform="translate(120 105) rotate(-4 280 190)"><rect x="12" y="12" width="560" height="365" rx="6" fill="#bcb3a3"/><rect width="560" height="365" rx="6" fill="#222521"/>
+<path d="M0 45H560" stroke="#4c5148"/><g fill="#848d7e"><circle cx="23" cy="23" r="5"/><circle cx="41" cy="23" r="5"/><circle cx="59" cy="23" r="5"/></g>
+<g font-family="monospace" font-size="16"><text x="30" y="90" fill="#c9f75b">~/build-journal</text><text x="30" y="137" fill="#e0e4d7">$ ideas → experiments → learnings</text><text x="30" y="197" fill="#a5b09a">01  Start with a question.</text><text x="30" y="231" fill="#a5b09a">02  Build something small.</text><text x="30" y="265" fill="#a5b09a">03  Document the unexpected.</text><text x="30" y="322" fill="#c9f75b">▌</text></g></g>
+<g fill="#454c40" font-family="monospace" font-size="12"><text x="40" y="554" letter-spacing="2">BUILD JOURNAL</text><text x="583" y="554">CONCEPT / 003</text></g></svg>

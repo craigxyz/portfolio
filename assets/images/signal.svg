@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="680" viewBox="0 0 1280 680">
+<defs><radialGradient id="g"><stop stop-color="#405631"/><stop offset="1" stop-color="#202c22"/></radialGradient><pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#bfe087" stroke-opacity=".07"/></pattern></defs>
+<rect width="1280" height="680" fill="url(#g)"/><rect width="1280" height="680" fill="url(#grid)"/>
+<g transform="translate(210 105)"><rect width="860" height="470" rx="12" fill="#111713" stroke="#6a7c59"/>
+<path d="M0 60H860M175 60V470" stroke="#344331"/><g fill="#63745a"><circle cx="25" cy="30" r="5"/><circle cx="43" cy="30" r="5"/><circle cx="61" cy="30" r="5"/></g>
+<g font-family="monospace" fill="#b3c2a5" font-size="12"><text x="335" y="35">SIGNAL / SYSTEM OVERVIEW</text><text x="25" y="104" fill="#c9f75b">◉ Overview</text><text x="25" y="148">↗ Activity</text><text x="25" y="192">≡ Sources</text><text x="25" y="426">CONCEPT / 001</text></g>
+<g font-family="Arial,sans-serif"><text x="208" y="112" fill="#eef5e5" font-size="24">A little clarity in the noise.</text><text x="208" y="140" fill="#96a88b" font-size="12">Illustrative interface · fictional project</text></g>
+<rect x="208" y="174" width="620" height="229" rx="5" fill="#1b241c"/>
+<g stroke="#334331"><path d="M235 224H800M235 268H800M235 312H800M235 356H800"/><path d="M315 200V376M435 200V376M555 200V376M675 200V376"/></g>
+<path d="M236 332L272 332L294 307L325 312L348 290L378 312L406 276L434 285L458 245L489 259L514 233L545 254L570 207L603 229L628 210L658 252L685 231L716 249L746 211L774 219L800 188" fill="none" stroke="#c9f75b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<g fill="#9aaf8c" font-family="monospace" font-size="11"><text x="211" y="436">INPUT → PROCESS → UNDERSTAND</text><text x="691" y="436">SAMPLE DATA</text></g></g>
+<text x="48" y="632" font-family="monospace" font-size="12" letter-spacing="3" fill="#a8bb93">SIGNAL MONITOR</text><text x="1070" y="632" font-family="monospace" font-size="12" fill="#a8bb93">DESIGN CONCEPT</text>
+</svg>

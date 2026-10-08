@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+<defs><pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#8de3d9" stroke-opacity=".12"/></pattern></defs>
+<rect width="800" height="600" fill="#173b3c"/><rect width="800" height="600" fill="url(#grid)"/>
+<g fill="none" stroke="#497674" stroke-width="1"><circle cx="400" cy="285" r="200"/><circle cx="400" cy="285" r="140"/><circle cx="400" cy="285" r="80"/><path d="M150 285H650M400 35V535"/></g>
+<path d="M212 399L294 324L365 352L430 226L534 258L587 145" fill="none" stroke="#a3f3d0" stroke-width="4" stroke-linejoin="round"/>
+<g fill="#173b3c" stroke="#a3f3d0" stroke-width="3"><circle cx="212" cy="399" r="9"/><circle cx="294" cy="324" r="9"/><circle cx="365" cy="352" r="9"/><circle cx="430" cy="226" r="9"/><circle cx="534" cy="258" r="9"/></g><circle cx="587" cy="145" r="10" fill="#d2fc81"/><circle cx="587" cy="145" r="22" fill="none" stroke="#d2fc81" stroke-opacity=".4"/>
+<g font-family="monospace" font-size="12" fill="#a3d0cb"><text x="174" y="434">START</text><text x="606" y="137">GOAL</text><text x="40" y="554" letter-spacing="2">ROUTE EXPLORER</text><text x="582" y="554">CONCEPT / 002</text></g></svg>

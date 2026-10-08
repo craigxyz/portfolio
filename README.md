@@ -1,28 +1,34 @@
 # Personal portfolio
 
-A personal portfolio planned for GitHub Pages, using plain HTML, CSS, and JavaScript.
+A bold dark gallery for engineering and software projects, built with plain HTML, CSS, and JavaScript.
 
-Design direction: a bold dark gallery showcasing engineering and software projects for developer roles.
+**Live preview:** https://craigxyz.github.io/portfolio/
 
-**Current stage: design specification.** Website implementation has not started.
+The current site uses three clearly labeled fictional projects. About, experience, and resume content are placeholders. GitHub is the current contact destination. No backend or build step is required.
 
-Read the [design specification](DESIGN_SPEC.md) for requirements, proposed page layouts, visual direction, and decisions to resolve before building.
+## Pages
 
-## Confirmed scope
+- `index.html`: introduction, selected work, About, and Contact
+- `projects.html`: sample projects with expandable briefs
+- `experience.html`: experience and resume placeholders
+- `404.html`: custom not-found page
 
-- About me section
-- Projects page
-- Past experience and resume
-- Contact information
-- Static site with no backend
-- Plain HTML, CSS, and JavaScript
-- GitHub Pages hosting
+Shared styles, the mobile-navigation script, and original SVG concept illustrations live in `assets/`. The site loads Space Grotesk and DM Sans from Google Fonts, with local system-font fallbacks.
 
-## Workflow
+## Edit and preview
 
-1. Refine the specification with the portfolio owner.
-2. Agree on the visual direction, content, and page structure.
-3. Implement the approved specification.
-4. Verify responsiveness, accessibility, and links before enabling GitHub Pages.
+Open `index.html` in a browser, or serve this directory locally:
 
-Publishing this repository does not deploy a website.
+```sh
+python3 -m http.server 8000
+```
+
+Content is written directly in the HTML files. Update the shared navigation and footer in each page when changing them. Keep relative links compatible with the `/portfolio/` deployment path; the 404 page uses project-root paths for nested missing URLs.
+
+## Deployment
+
+GitHub Pages publishes the root of `main`. `.nojekyll` keeps the site as plain static files. Changes to `main` trigger publication.
+
+The preview contains `noindex` metadata while the content is fictional. Remove it from the HTML pages when the real portfolio is ready. Add the actual biography, projects, experience, resume, and chosen contact details before treating this as a finished portfolio.
+
+See [DESIGN_SPEC.md](DESIGN_SPEC.md) for the design direction and remaining decisions.

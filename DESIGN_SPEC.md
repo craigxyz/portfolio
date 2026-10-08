@@ -1,14 +1,16 @@
 # Portfolio design specification
 
-Version: 0.2 — dark gallery refinement, October 8, 2026
+Version: 0.3 — published placeholder implementation, October 8, 2026
 
-Status: open for discussion; implementation has not started.
+Status: placeholder implementation authorized for immediate GitHub Pages publication. The design remains open for refinement.
+
+The owner requested a live dummy site using placeholder projects. This supersedes the earlier requirement to finish the specification before implementation. Fictional projects are explicitly labeled; biography, employment history, resume, and contact details remain unfilled until supplied.
 
 ## 1. Purpose
 
 Showcase engineering projects and software development through a bold, expressive portfolio aimed at developer roles. Help hiring managers, engineers, and recruiters understand the problems I solve, inspect evidence of my work, review my experience, and contact me.
 
-The details labeled **proposed** below are starting points for discussion, not approved design decisions. No biography, employment history, credentials, project results, or contact details should be invented.
+The details labeled **proposed** below are starting points for discussion, not approved design decisions. No biography, employment history, credentials, project results, or contact details should be invented. Fictional project concepts are permitted in the dummy site when clearly labeled.
 
 ## 2. Confirmed requirements
 
@@ -21,7 +23,7 @@ The details labeled **proposed** below are starting points for discussion, not a
 | Stack | Plain HTML, CSS, and JavaScript |
 | Architecture | Static site; no backend |
 | Hosting | GitHub Pages |
-| Process | Refine the design specification before building |
+| Process | Publish a dummy site now; continue refining design and content afterward |
 | Purpose | Showcase creative work |
 | Featured work | Engineering projects and software development |
 | Audience and goal | Hiring teams considering me for developer roles |
@@ -147,7 +149,7 @@ Use roughly 64 px desktop side padding, 24 px on phones, and 16 px at very narro
 - Keep image corners square or subtly rounded, with no heavy card shadows.
 - Use a 160–220 ms transition for link and button states. Optional image movement should be small and disabled for reduced motion.
 - Do not require carousels, custom cursors, parallax, animated backgrounds, or scroll-triggered reveals for the initial version.
-- The concept preview uses labeled image and content placeholders. They communicate layout and must not become published portfolio claims.
+- The concept preview uses labeled image and content placeholders. They communicate layout. The owner has authorized labeled fictional examples on the public dummy site; they must not be presented as completed real work.
 
 ## 6. Responsive behavior and interaction
 
@@ -177,7 +179,7 @@ Use roughly 64 px desktop side padding, 24 px on phones, and 16 px at very narro
 - Proposed future structure: root HTML pages, `assets/css/`, `assets/js/`, `assets/images/`, and an optional `assets/documents/` for the resume.
 - Optimize images for their display size, include dimensions to reduce layout movement, and defer below-the-fold images where appropriate.
 - Avoid third-party scripts and analytics in the initial version.
-- Configure GitHub Pages only after implementation and review. The repository is being published now solely to collaborate on this specification.
+- Publish the placeholder version to GitHub Pages from the root of the main branch. The owner explicitly authorized immediate deployment.
 - A custom domain is optional and outside the initial setup.
 
 ## 9. Content needed from the owner
@@ -193,7 +195,7 @@ Use roughly 64 px desktop side padding, 24 px on phones, and 16 px at very narro
 | Public email and selected profile links | Contact section |
 | Optional portrait and visual references | Final visual direction |
 
-## 10. Decisions to resolve before building
+## 10. Decisions for the next refinement
 
 1. Are there specific developer roles to prioritize, such as frontend, backend, full-stack, embedded, or machine learning? General developer roles are confirmed.
 2. Is viewing projects the right primary action, with experience/resume as the secondary action?
@@ -202,7 +204,7 @@ Use roughly 64 px desktop side padding, 24 px on phones, and 16 px at very narro
 5. Which projects and experiences should be featured, and how much detail should each receive?
 6. Should the first version include a portrait and downloadable resume? The proposed initial theme is dark only.
 
-We can refine this document incrementally. Implementation begins after the owner agrees that the specification is ready.
+The dummy implementation is authorized. These decisions guide later refinement and do not block publishing the placeholder site.
 
 ## 11. Future completion criteria
 
@@ -215,4 +217,4 @@ These are acceptance criteria for the later build, not claims about the current 
 - Project, contact, resume, and cross-page anchor links work.
 - Assets and direct page URLs work under the actual GitHub Pages project path.
 - Images are appropriately sized, and pages avoid unnecessary dependencies.
-- The owner reviews the finished site before deployment.
+- The owner reviews the content and design before the placeholder version becomes the final portfolio.
