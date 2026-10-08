@@ -2,6 +2,8 @@
 
 A personal portfolio planned for GitHub Pages, using plain HTML, CSS, and JavaScript.
 
+Design direction: a bold dark gallery showcasing engineering and software projects for developer roles.
+
 **Current stage: design specification.** Website implementation has not started.
 
 Read the [design specification](DESIGN_SPEC.md) for requirements, proposed page layouts, visual direction, and decisions to resolve before building.

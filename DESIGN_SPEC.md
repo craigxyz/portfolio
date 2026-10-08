@@ -1,11 +1,12 @@
 # Portfolio design specification
 
-Version: 0.1 — initial draft, October 8, 2026  
+Version: 0.2 — dark gallery refinement, October 8, 2026
+
 Status: open for discussion; implementation has not started.
 
 ## 1. Purpose
 
-Showcase my creative work through a bold, expressive portfolio. Help visitors explore the work first, then understand who I am, review my experience, and contact me. The precise audience still needs to be chosen; the confirmed priority is presenting creative work.
+Showcase engineering projects and software development through a bold, expressive portfolio aimed at developer roles. Help hiring managers, engineers, and recruiters understand the problems I solve, inspect evidence of my work, review my experience, and contact me.
 
 The details labeled **proposed** below are starting points for discussion, not approved design decisions. No biography, employment history, credentials, project results, or contact details should be invented.
 
@@ -22,7 +23,10 @@ The details labeled **proposed** below are starting points for discussion, not a
 | Hosting | GitHub Pages |
 | Process | Refine the design specification before building |
 | Purpose | Showcase creative work |
+| Featured work | Engineering projects and software development |
+| Audience and goal | Hiring teams considering me for developer roles |
 | Visual character | Bold and expressive |
+| Visual direction | Dark gallery: immersive imagery, dark background, luminous accents |
 
 ## 3. Proposed information architecture
 
@@ -45,7 +49,7 @@ Separate project detail pages are optional. Add them only when the available mat
 ### Home
 
 1. **Header:** name or simple wordmark and navigation.
-2. **Introduction:** an oversized typographic statement about my creative focus, my name, and a brief supporting line. Primary action: Explore my work. Secondary action: Get in touch. Final wording depends on the supplied content.
+2. **Introduction:** an oversized statement about my engineering and software focus, my name, and a brief supporting line. Primary action: View projects. Secondary action: View experience, with a resume link when supplied. Keep Contact visible in the navigation. Final wording depends on the supplied content.
 3. **Selected projects:** two or three representative projects with large imagery, each paired with a title, short description, my contribution, and a link. Give the strongest project the most visual space.
 4. **About me:** two or three short paragraphs covering background, current interests, and what I enjoy working on. A portrait is optional.
 5. **Contact:** a short invitation, a visible email link, and selected professional profiles. Availability statements appear only if supplied.
@@ -60,6 +64,19 @@ Separate project detail pages are optional. Add them only when the available mat
 - Use concise technology labels as supporting information, not the main story.
 - Start with a visually varied grid: a prominent lead project followed by paired or full-width entries, based on the available assets. Preserve a clear reading order; filtering is unnecessary unless the collection becomes large enough to justify it.
 - Only include work and assets selected for public presentation by the owner.
+
+For developer-role applications, each project should make the following evidence easy to scan:
+
+| Field | Content to collect |
+| --- | --- |
+| Problem | What needed to work, and for whom? |
+| Contribution | What did I personally design, implement, or test? Distinguish individual work from team work. |
+| Technical decisions | One or two meaningful architecture choices, constraints, or tradeoffs |
+| Evidence | A working demo, repository, screenshot, hardware photo, architecture diagram, or test result |
+| Outcome | What works now, what was learned, and any measured improvement supported by data |
+| Stack | A short list of technologies actually used |
+
+Keep the home-page summary to a title, a short problem-and-contribution statement, and one or two useful links. Put deeper technical context on the Projects page or an optional case-study page. For hardware or engineering work, show the actual system and explain how the software interacts with it. For software-only work, prefer a real interface, a clear architecture diagram, or a concise demonstration over a decorative code screenshot.
 
 ### Experience and resume
 
@@ -78,22 +95,59 @@ Separate project detail pages are optional. Add them only when the available mat
 
 ## 5. Proposed visual direction
 
-Confirmed direction: bold and expressive, with creative work as the centerpiece. Proposed execution: an oversized typographic opening, high-contrast color, generous negative space, and large project imagery. Use varied composition to create personality while keeping the work easy to browse.
+Confirmed direction: a bold, expressive dark gallery with immersive imagery and luminous accents. Creative work is the centerpiece. Proposed execution: oversized typography above a large featured image, a near-black canvas, generous negative space, and a luminous lime accent. Let the projects supply most of the color and texture.
 
 | Element | Starting proposal |
 | --- | --- |
-| Palette | Warm off-white and near-black with a vivid electric-violet accent; occasional large color fields |
+| Palette | Near-black background, warm-white primary text, muted sage-gray secondary text, luminous lime accent |
 | Typography | Oversized, tightly composed display headings with a readable sans-serif body; consider one self-hosted, licensed display font |
 | Content width | Approximately 1,280 px overall for imagery; long text limited to about 65–75 characters per line |
 | Spacing | Consistent 8 px-based spacing scale; generous separation and deliberate changes in visual density |
-| Project presentation | Large images, prominent titles, and an asymmetric desktop composition that becomes a clear single column on phones |
+| Project presentation | One large lead image followed by an asymmetric pair; visible captions below imagery; single-column reading order on phones |
 | Imagery | Real project screenshots, artwork, or diagrams; preserve original aspect ratios or approve crops individually; optional portrait |
 | Motion | Subtle image and link transitions; optional short entrance effects that never hide content or delay reading; respect reduced motion |
-| Theme | One cohesive theme initially, with selective inverted sections; a theme switch remains optional |
+| Theme | Dark gallery throughout; no theme switch proposed for the first version |
 
 Final colors, type choices, image treatment, and density should be agreed on before implementation. Any color combination must be checked for readable contrast.
 
-Two variations to compare during refinement: an expressive editorial treatment with oversized type and an off-white canvas, or a darker gallery treatment with luminous accents and immersive imagery. The editorial treatment is the initial proposal. Reference sites and actual project assets will help make this choice concrete.
+The owner selected the dark gallery direction over the bright editorial alternative. The exact accent, typography, and composition below remain proposals for review.
+
+### Proposed color and typography system
+
+| Role | Proposed value | Usage |
+| --- | --- | --- |
+| Canvas | `#101211` | Main page background |
+| Raised surface | `#1A1F1B` | Image backing and occasional grouped content |
+| Primary text | `#F4F6EF` | Headings and body text |
+| Secondary text | `#B3BAB0` | Dates, captions, project metadata |
+| Accent | `#C9F75B` | Main call to action, link emphasis, focus indication |
+
+Calculated contrast on the canvas: primary text 17.26:1, secondary text 9.46:1, and accent 15.17:1. These token checks do not replace checking the actual rendered components, especially text near project imagery.
+
+- Hero heading: approximately 96–144 px on wide screens and 48–64 px on phones, scaled fluidly to avoid overflow.
+- Section headings: approximately 40–64 px on desktop and 32–40 px on phones.
+- Body text: 18 px with approximately 1.6 line height; captions no smaller than 14 px.
+- Keep headings compact and body copy relaxed. Use a system sans-serif for the concept; choose a licensed display font only if it adds a distinctive voice.
+- Keep text on solid backgrounds. Avoid text over busy artwork and avoid glow effects on paragraphs.
+
+### Proposed composition
+
+**Home:** compact header; large two-line introduction; one dominant featured-project image with its caption below; two supporting projects; a quieter About section; a large closing contact invitation. Keep the first featured work close enough to the introduction to establish the site's purpose without a full screen of empty space.
+
+**Projects:** a short title and introduction followed immediately by the work. Let the first project span the content width, then vary the size of later entries when their assets justify it. Preserve a predictable reading order and always keep project title, role, and destination visible.
+
+**Experience:** retain the same header, palette, and typography, but use a restrained list. On wider screens, put dates in a narrow left column and role details on the right. Stack dates above each role on phones. Place the optional resume link beside the page introduction.
+
+Use roughly 64 px desktop side padding, 24 px on phones, and 16 px at very narrow widths. Aim for 96–144 px between major desktop sections and 64–80 px on phones. Treat these as layout targets, not fixed dimensions that should cause clipping.
+
+### Image and interaction treatment
+
+- Default the lead image frame to 16:10; use 4:3 for supporting images when suitable. Contain diagrams and interface screenshots that would lose meaning when cropped.
+- If a project has no suitable image, use a deliberate text-led entry instead of unrelated stock art or fabricated screenshots.
+- Keep image corners square or subtly rounded, with no heavy card shadows.
+- Use a 160–220 ms transition for link and button states. Optional image movement should be small and disabled for reduced motion.
+- Do not require carousels, custom cursors, parallax, animated backgrounds, or scroll-triggered reveals for the initial version.
+- The concept preview uses labeled image and content placeholders. They communicate layout and must not become published portfolio claims.
 
 ## 6. Responsive behavior and interaction
 
@@ -131,7 +185,7 @@ Two variations to compare during refinement: an expressive editorial treatment w
 | Content | Needed for |
 | --- | --- |
 | Preferred public name and headline | Header, introduction, metadata |
-| Main audience and desired visitor action | Tone, project order, calls to action |
+| Target developer roles or specialism, if any | Project order and headline; general developer roles are already confirmed |
 | Short biography and interests | About section |
 | Selected projects, role, outcomes, links, and assets | Projects page and home-page highlights |
 | Employment history and relevant education | Experience page |
@@ -141,12 +195,12 @@ Two variations to compare during refinement: an expressive editorial treatment w
 
 ## 10. Decisions to resolve before building
 
-1. Within the creative-work focus, who is the primary audience: hiring teams, potential clients, collaborators, or another group?
-2. Is exploring projects the right primary action, with contact as the secondary action?
-3. Within the confirmed bold, expressive direction, should the visual treatment feel like an editorial portfolio or a darker gallery? Are there reference sites to learn from?
+1. Are there specific developer roles to prioritize, such as frontend, backend, full-stack, embedded, or machine learning? General developer roles are confirmed.
+2. Is viewing projects the right primary action, with experience/resume as the secondary action?
+3. Does the proposed luminous lime accent and image-first composition fit the confirmed dark gallery direction? Are there reference sites to learn from?
 4. Does the proposed three-page structure work, including About and Contact on the home page?
 5. Which projects and experiences should be featured, and how much detail should each receive?
-6. Should the first version include a portrait, downloadable resume, or dark mode?
+6. Should the first version include a portrait and downloadable resume? The proposed initial theme is dark only.
 
 We can refine this document incrementally. Implementation begins after the owner agrees that the specification is ready.
 
